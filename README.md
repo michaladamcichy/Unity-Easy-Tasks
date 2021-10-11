@@ -3,7 +3,7 @@ Let's say I would like to make the screen fade to red color when my character is
 Or maybe I would like to change smoothly scale of an object to 1.5 and then go back to 1.0 and it all should take 4 seconds.
 
 To achieve that I can use **coroutines** (which has drawbacks such as not being visible in editor mode etc.) or **async tasks** - for example using https://github.com/Cysharp/UniTask library.
-**However, I end up writing new methods and keep repeating writing the same code** for every thing that happens in my game (correct me if I'm wrong).
+**However, I end up writing new methods and keep repeating writing the same code** for everything that happens in my game (correct me if I'm wrong).
 
 **A solution could be a task library, that would allow me to run asynchronous tasks in one line**, in order to:
 
