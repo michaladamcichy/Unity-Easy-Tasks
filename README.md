@@ -31,7 +31,7 @@ float opacity = 0f;
 ...
 Task.Interpolate(opacity, 0.5f, 1f, () => overlay.SetOpacity(opacity)) //change variable opacity from 0f to 0.5f in 1s
   .Wait(1f) //then wait 1s
-  .Interpolate(opacity, 0f, 1f, () => overlay.SetOpacity(opacity)); //change variable opacity from 0.5f back to 0f in 1s
+  .Interpolate(opacity, 0f, 1f, () => overlay.SetOpacity(opacity)); //then change variable opacity from 0.5f back to 0f in 1s
 ```
 
 The other problem, with a variable, that can be changed directly by ref:
@@ -39,7 +39,7 @@ The other problem, with a variable, that can be changed directly by ref:
 ```
 ...
 Task.Interpolate(transform.scale, new Vector3(1.5f, 1.5f, 1.5f), 2f) //grow 1.5 times in 2s
-  .Interpolate(ref transform.scale, new Vector3(1f, 1f, 1f), 2f); //go back to original size in 2s
+  .Interpolate(ref transform.scale, new Vector3(1f, 1f, 1f), 2f); //then go back to original size in 2s
 ```
   
 Interpolation could also be customized by supplying a curve as parameter (see more in .cs file).
