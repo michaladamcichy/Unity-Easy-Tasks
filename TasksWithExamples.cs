@@ -283,6 +283,14 @@ public class Interpolation<T> : Task
     }
 }
 
+
+
+
+/*-----------------------------
+EXAMPLES!!!
+-----------------------------*/
+
+
 //#1 count 100 frames
 public class SampleGameObject1 : MonoBehaviour
 {
