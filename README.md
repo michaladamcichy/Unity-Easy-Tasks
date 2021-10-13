@@ -34,7 +34,7 @@ Task.Interpolate(opacity, 0.5f, 1f, () => overlay.SetOpacity(opacity)) //change 
   .Interpolate(opacity, 0f, 1f, () => overlay.SetOpacity(opacity)); //then change variable opacity from 0.5f back to 0f in 1s
 ```
 
-The other problem, with a variable, that can be changed directly by ref:
+The other problem, with a variable, that can't be changed directly by ref:
 
 ```
 ...
